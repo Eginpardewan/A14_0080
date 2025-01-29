@@ -16,7 +16,7 @@ interface AppContainer {
 
 class VillaContainer : AppContainer {
 
-    private val baseUrl = "http://10.0.2.2:3000/api/" // Ganti dengan IP jika perlu
+    private val baseUrl ="http://10.0.2.2:3000/api/"
     private val json = Json { ignoreUnknownKeys = true }
 
     private val retrofit: Retrofit = Retrofit.Builder()

@@ -24,11 +24,11 @@ interface VillaService {
     suspend fun insertVilla(@Body villa: Villa)
 
     @GET("villas/{id_villa}")
-    suspend fun getVillaById(@Path("id_villa") id_villa: Int): DetailVillaResponse // Mengembalikan DetailVillaResponse
+    suspend fun getVillaById(@Path("idvilla") id_villa: Int): DetailVillaResponse // Mengembalikan DetailVillaResponse
 
     @PUT("villas/{id_villa}")
-    suspend fun updateVilla(@Path("id_villa") id_villa: Int, @Body villa: Villa): Response<Villa> // Mengembalikan Response<Villa>
+    suspend fun updateVilla(@Path("idvilla") id_villa: Int, @Body villa: Villa): Response<Villa> // Mengembalikan Response<Villa>
 
     @DELETE("villas/{id_villa}")
-    suspend fun deleteVilla(@Path("id_villa") id_villa: Int): Response<Void>
+    suspend fun deleteVilla(@Path("idvilla") id_villa: Int): Response<Void>
 }
