@@ -54,7 +54,7 @@ fun HomeView(
         BodyHome(
             modifier = Modifier.padding(innerPadding),
             onPelangganClick = {
-                onNavigateReview()
+                onNavigatePelanggan()
             },
             onVillaClick = {
                 onNavigateVilla()

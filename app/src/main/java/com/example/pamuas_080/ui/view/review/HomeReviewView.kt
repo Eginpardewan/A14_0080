@@ -138,17 +138,16 @@ fun ReviewLayout(
                 review = review,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onDetailClick(review) }
+                    .clickable { onDetailClick(review) } // pastikan dipanggil dengan benar
             )
         }
     }
 }
-
 @Composable
 fun ReviewCard(
     review: Review,
     modifier: Modifier = Modifier
-){
+) {
     Card(
         modifier = modifier,
         shape = MaterialTheme.shapes.medium,
@@ -161,13 +160,13 @@ fun ReviewCard(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ){
-                // Ubah review.id_reservasi dan review.id_review menjadi tipe data int
+                // Menampilkan review
                 Text(
-                    text = review.id_reservasi.toString(), // ubah menjadi string
+                    text = review.id_reservasi.toString(),
                     style = MaterialTheme.typography.titleLarge
                 )
                 Text(
-                    text = review.id_review.toString(), // ubah menjadi string
+                    text = review.id_review.toString(),
                     style = MaterialTheme.typography.titleMedium
                 )
                 Text(
