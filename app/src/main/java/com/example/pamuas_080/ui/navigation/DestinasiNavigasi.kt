@@ -85,7 +85,7 @@ object DestinasiUpdateReservasi: DestinasiNavigasi {
 }
 
 object DestinasiHomeReview: DestinasiNavigasi{
-    override val route = "Home"
+    override val route = "Home Review"
     override val titleRes = "Home Review"
 }
 
